@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Static/style.css">
+    <title>Image Compression</title>
+</head>
+<body>
+    <div class="container">
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="theme-toggle">
+                <input type="checkbox" id="theme-toggle" />
+                <div class="slider round"></div>
+            </label>
+        </div>
+        <h1>Image Compression using SVD</h1>
+        <form id="compression-form" action="/compress" method="post" enctype="multipart/form-data">
+            <!-- Initial Upload View -->
+            <div id="upload-section">
+                <input type="file" name="image" id="file-input" accept="image/*">
+                <h2>Or drag and drop your image here:</h2>
+                <div id="drop-area">
+                    Drag & Drop Image Here
+                </div>
+            </div>
+
+            <!-- Preview and Options View (hidden by default) -->
+            <div id="preview-section" class="hidden">
+                <img id="image-preview" src="#" alt="Your selected image" />
+                <p id="file-size-info"></p>
+                <label for="quality-slider">Compression Quality (k): <span id="k-value-display">50</span></label>
+                <input type="range" id="quality-slider" name="k" min="1" max="200" value="50">
+                <input type="submit" value="Compress Image">
+            </div>
+        </form>
+
+        <!-- Loading Indicator -->
+        <div id="loading-indicator" class="hidden">Loading...</div>
+
+        <!-- Result Display -->
+        <div id="result-section" class="hidden">
+            <h2>Compressed Image</h2>
+            <img id="compressed-image" src="#" alt="Compressed image" />
+            <p id="compressed-size-info"></p>
+            <a href="#" id="download-btn" class="button hidden" download="compressed_image.png">Download Image</a>
+        </div>
+    </div>
+    
+    <script src="../Static/script.js"></script>
+</body>
+</html>
