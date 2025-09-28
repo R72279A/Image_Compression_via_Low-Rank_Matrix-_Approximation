@@ -27,7 +27,7 @@ Compression is achieved by **truncating** these components. By keeping only the 
 
 ## 🛠️ Technology Stack
 
-* **Backend:** Python 3, Flask, NumPy, Pillow
+* **Backend:** Python 3, Flask, NumPy
 * **Frontend:** HTML5, CSS3, Vanilla JavaScript
 
 ## 🔧 Setup and Installation
