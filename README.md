@@ -1,6 +1,8 @@
 # Image Compressor with SVD from Scratch
 
-This is a full-stack web application that demonstrates the concept of lossy image compression using Singular Value Decomposition (SVD). The core SVD algorithm is implemented from first principles using Python and NumPy, without relying on high-level library functions like `np.linalg.svd`.
+**[View on GitHub](https://github.com/R72279A/Image_Compression_via_Low-Rank_Matrix-_Approximation)**
+
+This is a full-stack web application that provides an interactive demonstration of lossy image compression using Singular Value Decomposition (SVD). The core SVD algorithm is implemented from first principles using Python and NumPy, without relying on high-level library functions like `np.linalg.svd`.
 
 This project serves as a practical application of fundamental linear algebra concepts to a real-world problem in data science and signal processing.
 
@@ -34,34 +36,38 @@ To run this application locally, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repository-url>
-    cd <your-repository-name>
+    git clone [https://github.com/R72279A/Image_Compression_via_Low-Rank_Matrix-_Approximation.git](https://github.com/R72279A/Image_Compression_via_Low-Rank_Matrix-_Approximation.git)
     ```
 
-2.  **Create and activate a virtual environment (recommended):**
+2.  **Navigate into the directory:**
+    ```bash
+    cd Image_Compression_via_Low-Rank_Matrix-_Approximation
+    ```
+
+3.  **Create and activate a virtual environment (recommended):**
     ```bash
     python -m venv venv
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
     ```
 
-3.  **Install the dependencies:**
+4.  **Install the dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
 
-4.  **Run the Flask application:**
+5.  **Run the Flask application:**
     ```bash
     python app.py
     ```
 
-5.  **View the application:**
+6.  **View the application:**
     Open your web browser and navigate to `http://127.0.0.1:5000`.
 
 ##  kullanım
 
 1.  Drag and drop an image file onto the designated area, or use the upload button to select a file.
 2.  Once the preview appears, adjust the "Quality (k)" slider to select your desired level of compression.
-3.  The compressed image and statistics will appear on the right side of the screen.
+3.  The compressed image and statistics will appear automatically.
 
 ## SEE demo of my app:
 ![This is demo working of my web application , hope you like it](./demo/demo.gif)
